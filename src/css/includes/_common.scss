@@ -81,21 +81,28 @@
   position: relative;
   display: inline-block;
   width: 100%;
+  padding: 5px;
+  font: 0.938em "open_sansbold"; // 15 / 16
+  color: #ffffff;
   text-decoration: none;
   text-align: center;
   outline: none;
+  transition: all 0.3s ease-out;
 }
 
 .b-btn-blue {
   @extend %b-button;
-  padding: 5px;
-  font: 0.938em "open_sansbold"; // 15 / 16
-  color: #ffffff;
   background-color: #222d4e;
-  transition: all 0.3s ease-out;
-
   &:hover {
     background-color: #507cbe;
+  }
+}
+
+.b-btn-red {
+  @extend %b-button;
+  background-color: #cd3c3c;
+  &:hover {
+    background-color: #f1691c;
   }
 }
 
@@ -107,7 +114,10 @@
   vertical-align: super;
 }
 .t-osb {
-  font-family: open_sansbold;
+  font-family: "open_sansbold";
+}
+.t-osl {
+  font-family: "open_sanslight";
 }
 
 .b-block__header {
