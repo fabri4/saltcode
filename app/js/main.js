@@ -11,6 +11,9 @@ $(document).ready(function() {
         $header.add($headerMenu).toggleClass("active");
     });
 
+    if($(window).scrollTop() > 50) {
+        $header.addClass('b-header--scroll');
+    }
     $(window).scroll(function(){
         if($(window).scrollTop() > 50) {
             $header.addClass('b-header--scroll');
@@ -18,6 +21,16 @@ $(document).ready(function() {
         else {
             $header.removeClass('b-header--scroll');
         }
+    });
+
+
+    var $grid = $('.b-portfolio__layout').isotope({
+        itemSelector: '.b-portfolio__item',
+        layoutMode: 'fitRows'
+    });
+    $('.b-portfolio__buttons').on( 'click', '.b-portfolio__button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
     });
 
 });
