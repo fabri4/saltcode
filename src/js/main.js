@@ -23,6 +23,7 @@ $(document).ready(function() {
         }
     });
 
+    //////////     PORTFOLIO GRID       ////////////
 
     var $grid = $('.b-portfolio__layout').isotope({
         itemSelector: '.b-portfolio__item',

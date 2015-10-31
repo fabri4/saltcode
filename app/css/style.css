@@ -516,6 +516,10 @@ html {
   width: 70%;
   margin: 0 auto 2em;
   cursor: pointer; }
+  .b-second__item:hover .b-second-item__img {
+    opacity: .7; }
+  .b-second__item:hover .b-second-item__name {
+    color: #ca393a; }
 
 .b-second-item__img {
   width: 100%;
@@ -813,7 +817,89 @@ html {
 
 /*----------- #TEAM ---------*/
 .b-team__wrapper {
-  background-color: #f2f2f2; }
+  padding-top: 50px; }
+
+.b-team__layout {
+  margin-top: 40px;
+  text-align: center; }
+
+.b-team__worker {
+  margin: 0 auto 25px;
+  text-align: center; }
+
+.b-worker__photo {
+  margin: 0 auto;
+  max-width: 35%;
+  overflow: hidden; }
+
+.b-worker-photo__img {
+  width: 100%;
+  display: block; }
+
+.b-worker__info {
+  margin-top: 5px; }
+
+.b-worker__name {
+  font: 15px "SourceSansPro Semibold";
+  color: #b5b5b5;
+  text-transform: uppercase; }
+
+.b-worker__post {
+  font: 15px "SourceSansPro Semibold";
+  color: #ca393a;
+  text-transform: uppercase; }
+
+.b-worker__social-list {
+  margin-top: 10px;
+  width: 100%;
+  letter-spacing: -.3em; }
+
+.b-worker-social {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+  margin-right: 6px; }
+  .b-worker-social:last-child {
+    margin-right: 0; }
+
+.b-social__ico {
+  display: block;
+  width: 32px;
+  height: 32px; }
+  .b-social__ico:hover {
+    opacity: .7; }
+
+.b-social__ico--tw {
+  background: url("../img/ico/social-tw-small.jpg"); }
+
+.b-social__ico--fb {
+  background: url("../img/ico/social-fb-small.jpg"); }
+
+.b-social__ico--pn {
+  background: url("../img/ico/social-pn-small.jpg"); }
+
+@media screen and (min-width: 768px) {
+  .b-team__layout {
+    margin-top: 94px; }
+  .b-team__worker {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    margin: 0 20px 20px;
+    text-align: left; }
+  .b-worker__photo {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    width: 128px;
+    max-width: none; }
+  .b-worker__info {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    margin: 18px 0 0 7px; }
+  .b-worker__social-list {
+    margin-top: 19px; } }
 
 /*----------- #CONTACT ---------*/
 .b-contact__wrapper {
