@@ -5,14 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 	<title>Saltcode</title>
-    <!--<link rel="stylesheet" href="css/style.css"/>-->
-    <link rel="stylesheet" href="css/style.min.css"/>
 	<!--[if lt IE 9]>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<![endif]-->
 
 </head>
-<body>
+<body style="display: none">
 
 <header class="b-page__header">
 	<section class="b-header">
@@ -234,7 +232,7 @@
 			</p>
 
 			<div class="b-portfolio__buttons">
-				<button class="b-portfolio__button" data-filter="*">all</button>
+				<button class="b-portfolio__button js-portfolio__button--all" data-filter="*">all</button>
 				<button class="b-portfolio__button" data-filter=".ui-ux">UI/UX</button>
 				<button class="b-portfolio__button" data-filter=".web-design">WEB DESIGN</button>
 				<button class="b-portfolio__button" data-filter=".illustration">ILLUSTRATION</button>
@@ -637,6 +635,8 @@
 
 
 <!--STYLES & SCRIPTS-->
+
+<link rel="stylesheet" href="css/style.min.css"/>
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.smoothscroll.js"></script>

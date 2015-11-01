@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $("body").fadeIn();
 
     setEqualHeight($(".b-third__wrapper > div"));
 
@@ -32,6 +33,7 @@ $(document).ready(function() {
                 $('html,body').animate({
                     scrollTop: target.offset().top
                 }, 1000);
+                $header.add($headerMenu).removeClass("active");
                 return false;
             }
         }
@@ -42,14 +44,12 @@ $(document).ready(function() {
 
     var $grid = $('.b-portfolio__layout').isotope({
         itemSelector: '.b-portfolio__item',
-        layoutMode: 'fitRows',
-        filter: '*'
+        layoutMode: 'fitRows'
     });
     $('.b-portfolio__buttons').on( 'click', '.b-portfolio__button', function() {
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
     });
-
 });
 
 

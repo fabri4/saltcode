@@ -80,8 +80,8 @@
 %b-button {
   position: relative;
   display: inline-block;
-  width: 100%;
-  padding: 5px;
+  //width: 100%;
+  padding: 5px 10px;
   font: 0.938em "open_sansbold"; // 15 / 16
   color: #ffffff;
   text-decoration: none;
@@ -115,6 +115,9 @@
 }
 .t-osb {
   font-family: "open_sansbold";
+}
+.t-oseb {
+  font-family: "open_sansextrabold";
 }
 .t-osl {
   font-family: "open_sanslight";
