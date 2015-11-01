@@ -42,7 +42,8 @@ $(document).ready(function() {
 
     var $grid = $('.b-portfolio__layout').isotope({
         itemSelector: '.b-portfolio__item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        filter: '*'
     });
     $('.b-portfolio__buttons').on( 'click', '.b-portfolio__button', function() {
         var filterValue = $(this).attr('data-filter');
