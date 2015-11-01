@@ -205,6 +205,96 @@ html {
 
 /*------------------------------------*    $SPRITE
 \*------------------------------------*/
+.sprite-erase {
+  width: 87px;
+  height: 28px;
+  background-position: -20px -20px; }
+
+.sprite-iphone_small {
+  width: 56px;
+  height: 116px;
+  background-position: -20px -88px; }
+
+.sprite-social-be {
+  width: 50px;
+  height: 50px;
+  background-position: -20px -244px; }
+
+.sprite-social-fb {
+  width: 50px;
+  height: 50px;
+  background-position: -20px -334px; }
+
+.sprite-social-fb-small {
+  width: 32px;
+  height: 32px;
+  background-position: -20px -424px; }
+
+.sprite-social-fl {
+  width: 50px;
+  height: 50px;
+  background-position: -20px -496px; }
+
+.sprite-social-pn {
+  width: 50px;
+  height: 50px;
+  background-position: -20px -586px; }
+
+.sprite-social-pn-small {
+  width: 32px;
+  height: 32px;
+  background-position: -20px -676px; }
+
+.sprite-social-sk {
+  width: 50px;
+  height: 50px;
+  background-position: -20px -748px; }
+
+.sprite-social-tw {
+  width: 50px;
+  height: 50px;
+  background-position: -20px -838px; }
+
+.sprite-social-tw-small {
+  width: 32px;
+  height: 32px;
+  background-position: -20px -928px; }
+
+.sprite-social-yt {
+  width: 50px;
+  height: 50px;
+  background-position: -20px -1000px; }
+
+.sprite-1 {
+  width: 27px;
+  height: 27px;
+  background-position: -50px -50px; }
+
+.sprite-2 {
+  width: 27px;
+  height: 21px;
+  background-position: -50px -177px; }
+
+.sprite-3 {
+  width: 27px;
+  height: 27px;
+  background-position: -50px -298px; }
+
+.sprite-4 {
+  width: 24px;
+  height: 28px;
+  background-position: -50px -425px; }
+
+.sprite-5 {
+  width: 27px;
+  height: 27px;
+  background-position: -50px -553px; }
+
+.sprite-6 {
+  width: 27px;
+  height: 27px;
+  background-position: -50px -680px; }
+
 /*------------------------------------*    $COMMON STYLES
 \*------------------------------------*/
 .clearfix,
@@ -661,18 +751,18 @@ html {
   padding-left: 43px;
   text-align: left; }
   .b-services__item:first-child {
-    background: url("../img/services/1.png") no-repeat; }
+    background: url("../img/sprite/spritesheet2.png") no-repeat -50px -50px; }
   .b-services__item:nth-child(2) {
-    background: url("../img/services/2.png") no-repeat; }
+    background: url("../img/sprite/spritesheet2.png") no-repeat -50px -177px; }
   .b-services__item:nth-child(3) {
-    background: url("../img/services/3.png") no-repeat; }
+    background: url("../img/sprite/spritesheet2.png") no-repeat -50px -298px; }
   .b-services__item:nth-child(4) {
-    background: url("../img/services/4.png") no-repeat; }
+    background: url("../img/sprite/spritesheet2.png") no-repeat -50px -425px; }
   .b-services__item:nth-child(5) {
-    background: url("../img/services/5.png") no-repeat; }
+    background: url("../img/sprite/spritesheet2.png") no-repeat -50px -553px; }
   .b-services__item:last-child {
     margin-bottom: 0;
-    background: url("../img/services/6.png") no-repeat; }
+    background: url("../img/sprite/spritesheet2.png") no-repeat -50px -680px; }
 
 .b-services-item__header {
   font: 18px "open_sanslight";
@@ -867,11 +957,11 @@ html {
     width: 32px;
     height: 32px; }
   .b-worker-social .b-social__ico--tw {
-    background: url("../img/ico/social-tw-small.jpg"); }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -928px; }
   .b-worker-social .b-social__ico--fb {
-    background: url("../img/ico/social-fb-small.jpg"); }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -424px; }
   .b-worker-social .b-social__ico--pn {
-    background: url("../img/ico/social-pn-small.jpg"); }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -676px; }
 
 .b-social__ico {
   display: block; }
@@ -895,7 +985,7 @@ html {
     left: -6px;
     width: 56px;
     height: 116px;
-    background: url("../img/ico/iphone_small.png") no-repeat; }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -88px; }
 
 @media screen and (min-width: 540px) {
   .b-team-phone {
@@ -970,7 +1060,7 @@ html {
     left: -11px;
     width: 87px;
     height: 28px;
-    background: url("../img/ico/erase.png") no-repeat; }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -20px; }
 
 .b-footer__social-list {
   margin-top: 30px;
@@ -991,19 +1081,19 @@ html {
     width: 50px;
     height: 50px; }
   .b-footer-social .b-social__ico--fl {
-    background: url("../img/ico/social-fl.png"); }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -496px; }
   .b-footer-social .b-social__ico--be {
-    background: url("../img/ico/social-be.png"); }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -244px; }
   .b-footer-social .b-social__ico--pn {
-    background: url("../img/ico/social-pn.png"); }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -586px; }
   .b-footer-social .b-social__ico--sk {
-    background: url("../img/ico/social-sk.png"); }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -748px; }
   .b-footer-social .b-social__ico--yt {
-    background: url("../img/ico/social-yt.png"); }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -1000px; }
   .b-footer-social .b-social__ico--fb {
-    background: url("../img/ico/social-fb.png"); }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -334px; }
   .b-footer-social .b-social__ico--tw {
-    background: url("../img/ico/social-tw.png"); }
+    background: url("../img/sprite/spritesheet.png") no-repeat -20px -838px; }
 
 .b-footer__text {
   margin-top: 25px;

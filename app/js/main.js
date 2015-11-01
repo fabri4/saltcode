@@ -32,6 +32,7 @@ $(document).ready(function() {
                 $('html,body').animate({
                     scrollTop: target.offset().top
                 }, 1000);
+                $header.add($headerMenu).removeClass("active");
                 return false;
             }
         }
