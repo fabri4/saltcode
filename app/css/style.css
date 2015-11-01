@@ -241,8 +241,7 @@ html {
 .b-btn-blue, .b-btn-red {
   position: relative;
   display: inline-block;
-  width: 100%;
-  padding: 5px;
+  padding: 5px 10px;
   font: 0.938em "open_sansbold";
   color: #ffffff;
   text-decoration: none;
@@ -269,6 +268,9 @@ html {
 
 .t-osb {
   font-family: "open_sansbold"; }
+
+.t-oseb {
+  font-family: "open_sansextrabold"; }
 
 .t-osl {
   font-family: "open_sanslight"; }
@@ -456,7 +458,7 @@ html {
 
 .b-main__button {
   margin: 20px auto 0;
-  width: 50%; }
+  text-align: center; }
 
 @media screen and (min-width: 768px) {
   .b-main__iphone {
@@ -481,8 +483,8 @@ html {
     margin-top: 0.833em;
     text-align: left; }
   .b-main__button {
-    width: 25%;
-    margin: 22px 0 0; }
+    margin: 22px 0 0;
+    text-align: left; }
   .b-main-lower__text {
     padding: 57px 0;
     font: 1.563em/1.600em "open_sanslight"; } }
@@ -539,7 +541,7 @@ html {
 
 .b-second__button {
   margin: 30px auto 0;
-  width: 192px; }
+  text-align: center; }
 
 @media screen and (min-width: 768px) {
   .b-second__wrapper {
@@ -817,7 +819,7 @@ html {
 
 /*----------- #TEAM ---------*/
 .b-team__wrapper {
-  padding-top: 50px; }
+  padding: 50px 0 54px; }
 
 .b-team__layout {
   margin-top: 40px;
@@ -840,12 +842,12 @@ html {
   margin-top: 5px; }
 
 .b-worker__name {
-  font: 15px "SourceSansPro Semibold";
+  font: 0.938em "SourceSansPro Semibold";
   color: #b5b5b5;
   text-transform: uppercase; }
 
 .b-worker__post {
-  font: 15px "SourceSansPro Semibold";
+  font: 0.938em "SourceSansPro Semibold";
   color: #ca393a;
   text-transform: uppercase; }
 
@@ -861,24 +863,47 @@ html {
   margin-right: 6px; }
   .b-worker-social:last-child {
     margin-right: 0; }
+  .b-worker-social .b-social__ico {
+    width: 32px;
+    height: 32px; }
+  .b-worker-social .b-social__ico--tw {
+    background: url("../img/ico/social-tw-small.jpg"); }
+  .b-worker-social .b-social__ico--fb {
+    background: url("../img/ico/social-fb-small.jpg"); }
+  .b-worker-social .b-social__ico--pn {
+    background: url("../img/ico/social-pn-small.jpg"); }
 
 .b-social__ico {
-  display: block;
-  width: 32px;
-  height: 32px; }
+  display: block; }
   .b-social__ico:hover {
     opacity: .7; }
 
-.b-social__ico--tw {
-  background: url("../img/ico/social-tw-small.jpg"); }
+.b-team__phone {
+  margin-top: 50px;
+  text-align: center; }
 
-.b-social__ico--fb {
-  background: url("../img/ico/social-fb-small.jpg"); }
+.b-team-phone {
+  position: relative;
+  display: inline-block;
+  padding-left: 72px;
+  font: 1.438em/4.957em "open_sansregular";
+  color: #222d4e; }
+  .b-team-phone:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 56px;
+    height: 116px;
+    background: url("../img/ico/iphone_small.png") no-repeat; }
 
-.b-social__ico--pn {
-  background: url("../img/ico/social-pn-small.jpg"); }
+@media screen and (min-width: 540px) {
+  .b-team-phone {
+    font: 2.688em/2.651em "open_sansregular"; } }
 
 @media screen and (min-width: 768px) {
+  .b-team__wrapper {
+    padding-bottom: 104px; }
   .b-team__layout {
     margin-top: 94px; }
   .b-team__worker {
@@ -899,12 +924,99 @@ html {
     letter-spacing: normal;
     margin: 18px 0 0 7px; }
   .b-worker__social-list {
-    margin-top: 19px; } }
+    margin-top: 19px; }
+  .b-team__phone {
+    margin-top: 80px; }
+  .b-team-phone {
+    font: 3.938em/1.810em "open_sansregular"; } }
 
 /*----------- #CONTACT ---------*/
 .b-contact__wrapper {
-  background-color: #f2f2f2; }
+  background-color: #ca393a; }
+
+.b-contact__header {
+  padding-top: 33px;
+  font: 40px "SourceSansPro Light";
+  color: #ffffff;
+  text-align: center; }
+
+.b-contact__button {
+  margin: 11px auto 0;
+  padding-bottom: 44px;
+  text-align: center; }
+  .b-contact__button .b-btn-blue {
+    padding: 10px;
+    font: 0.938em "open_sanssemibold"; }
 
 /*----------- #FOOTER ---------*/
 .b-footer__wrapper {
-  background-color: #f2f2f2; }
+  background-color: #222d4e;
+  padding-bottom: 20px; }
+
+.b-footer__header {
+  padding-top: 25px;
+  text-align: center; }
+
+.b-footer-header__text {
+  position: relative;
+  display: inline-block;
+  padding-left: 100px;
+  font: 29px "open_sanslight";
+  color: #ffffff; }
+  .b-footer-header__text:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -11px;
+    width: 87px;
+    height: 28px;
+    background: url("../img/ico/erase.png") no-repeat; }
+
+.b-footer__social-list {
+  margin-top: 30px;
+  width: 100%;
+  letter-spacing: -.3em;
+  text-align: center; }
+
+.b-footer-social {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+  margin: 5px; }
+  .b-footer-social:first-child {
+    margin-left: 0; }
+  .b-footer-social:last-child {
+    margin-right: 0; }
+  .b-footer-social .b-social__ico {
+    width: 50px;
+    height: 50px; }
+  .b-footer-social .b-social__ico--fl {
+    background: url("../img/ico/social-fl.png"); }
+  .b-footer-social .b-social__ico--be {
+    background: url("../img/ico/social-be.png"); }
+  .b-footer-social .b-social__ico--pn {
+    background: url("../img/ico/social-pn.png"); }
+  .b-footer-social .b-social__ico--sk {
+    background: url("../img/ico/social-sk.png"); }
+  .b-footer-social .b-social__ico--yt {
+    background: url("../img/ico/social-yt.png"); }
+  .b-footer-social .b-social__ico--fb {
+    background: url("../img/ico/social-fb.png"); }
+  .b-footer-social .b-social__ico--tw {
+    background: url("../img/ico/social-tw.png"); }
+
+.b-footer__text {
+  margin-top: 25px;
+  font: 1.125em "SourceSansPro Light";
+  color: #4d6093;
+  text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .b-footer__wrapper {
+    padding-bottom: 47px; }
+  .b-footer__header {
+    padding-top: 79px; }
+  .b-footer__social-list {
+    margin-top: 66px; }
+  .b-footer__text {
+    margin-top: 50px; } }
