@@ -416,7 +416,7 @@ html {
 /*----------- #HEADER ---------*/
 .b-page__header {
   position: fixed;
-  z-index: 1000;
+  z-index: 10000;
   width: 100%;
   overflow: visible; }
 
@@ -1037,6 +1037,9 @@ html {
   .b-contact__button .b-btn-blue {
     padding: 10px;
     font: 0.938em "open_sanssemibold"; }
+
+#map {
+  height: 500px; }
 
 /*----------- #FOOTER ---------*/
 .b-footer__wrapper {
