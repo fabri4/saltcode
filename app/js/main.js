@@ -50,6 +50,41 @@ $(document).ready(function() {
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
     });
+
+
+    ///// MAP
+
+    var center = [50.259552, 19.021679000000006];
+    mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmFicmk0IiwiYSI6ImNpZ2ptdDU4MDAwNTl0M2x1NW0xM2hvOWcifQ.hUjwh_j0B_GqIvfY0QRBEA';
+    var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="http://mapbox.com">Mapbox</a>';
+
+    var map = L.map('map', {
+        "scrollWheelZoom": false
+    }).setView(center, 16);
+
+    L.tileLayer(mapboxUrl, {
+        attribution: mbAttr,
+        maxZoom: 18,
+        id: 'mapbox.streets',
+        accessToken: 'pk.eyJ1IjoiZmFicmk0IiwiYSI6ImNpZ2ptdDU4MDAwNTl0M2x1NW0xM2hvOWcifQ.hUjwh_j0B_GqIvfY0QRBEA'
+    }).addTo(map);
+
+    var marker = L.marker(center).addTo(map);
+    marker.bindPopup("<b>Hello!</b><br>This is Katowice Rynek");
+
+    // adding switchable map layers
+    /*var satelite   = L.tileLayer(mapboxUrl, {id: 'mapbox.satellite', attribution: mbAttr}),
+        streets  = L.tileLayer(mapboxUrl, {id: 'mapbox.streets', attribution: mbAttr});
+
+    var layers = {
+        Streets: streets,
+        Satellite: satelite
+    };
+
+    layers.Streets.addTo(map);
+    L.control.layers(layers).addTo(map);*/
 });
 
 
@@ -66,3 +101,5 @@ function setEqualHeight(columns) {
     );
     columns.height(tallestcolumn);
 }
+
+

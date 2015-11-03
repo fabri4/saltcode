@@ -12,7 +12,7 @@
 
 .b-page__header {
   position: fixed;
-  z-index: 1000;
+  z-index: 10000;
   width: 100%;
   overflow: visible;
 }
@@ -753,6 +753,10 @@
       font: 0.938em "open_sanssemibold";
     }
   }
+
+#map {
+  height: 500px;
+}
 
 /*----------- #FOOTER ---------*/
 
