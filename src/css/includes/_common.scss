@@ -90,21 +90,21 @@
   transition: all 0.3s ease-out;
 }
 
-.b-btn-blue {
-  @extend %b-button;
+.b-btn--blue {
   background-color: #222d4e;
   &:hover {
     background-color: #507cbe;
   }
 }
 
-.b-btn-red {
-  @extend %b-button;
+.b-btn--red {
   background-color: #cd3c3c;
   &:hover {
     background-color: #f1691c;
   }
 }
+
+
 
 .t-uc {
   text-transform: uppercase;

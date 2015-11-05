@@ -168,6 +168,10 @@
           margin: 20px auto 0;
           text-align: center;
         }
+          .b-btn--main {
+            @extend .b-button;
+            @extend .b-btn--blue;
+          }
 
 @include minw(768) {
   .b-main__iphone {
@@ -271,6 +275,10 @@
     margin: 30px auto 0;
     text-align: center;
   }
+    .b-btn--second {
+      @extend .b-button;
+      @extend .b-btn--blue;
+    }
 
 @include minw(768) {
   .b-second__wrapper {
@@ -331,6 +339,10 @@
       width: 120px;
       padding-bottom: 20px;
     }
+      .b-btn--third {
+        @extend .b-button;
+        @extend .b-btn--red;
+      }
 
   .b-third__right {
     background-color: #cb3a3b;
@@ -747,12 +759,13 @@
     margin: 11px auto 0;
     padding-bottom: 44px;
     text-align: center;
-
-    .b-btn-blue {
+  }
+    .b-btn--contact  {
+      @extend .b-button;
+      @extend .b-btn--blue;
       padding: 10px;
       font: 0.938em "open_sanssemibold";
     }
-  }
 
 #map {
   height: 500px;
