@@ -51,8 +51,7 @@ $(document).ready(function() {
         $grid.isotope({ filter: filterValue });
     });
 
-
-    ///// MAP
+    ////////////   MAP   ////////////
 
     var center = [50.259552, 19.021679000000006];
     mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmFicmk0IiwiYSI6ImNpZ2ptdDU4MDAwNTl0M2x1NW0xM2hvOWcifQ.hUjwh_j0B_GqIvfY0QRBEA';
