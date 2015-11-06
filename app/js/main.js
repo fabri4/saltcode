@@ -6,7 +6,7 @@ $(document).ready(function() {
     //////////     MENU       ////////////
 
     var $header = $(".b-header"),
-        $menulink = $(".menu-link"),
+        $menulink = $(".b-menu__link"),
         $headerMenu = $(".b-header__nav");
     $menulink.on("click", function() {
         $header.add($headerMenu).toggleClass("active");

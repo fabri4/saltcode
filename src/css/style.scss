@@ -22,102 +22,105 @@
     &.active {
       background-color: rgba(30,30,30,.8);
     }
-  }
-  .b-header--scroll {
-    background-color: #ca393a;
-  }
-    .b-header__logo {
+    &--scroll {
+      background-color: #ca393a;
+    }
+
+    &__logo {
       float: left;
       padding-top: 18px;
       text-decoration: none;
     }
-      .b-header-logo__text {
+      &__logo-text {
         font: 25px "open_sansbold";
         color: #fff;
       }
-    .b-header__menu {
+
+    &__menu {
 
     }
-      .menu-link {
-        float: right;
-        margin: 1em 0;
-        font: 1.25em "open_sansbold"; // 20 / 16
-        color: #fff;
-        text-decoration: none;
+
+    &__nav {
+      clear: both;
+      width: 100%;
+      margin-top: 0;
+      padding: 0;
+      text-align: center;
+      transition: all 0.3s ease-out;
+      overflow: hidden;
+      max-height: 0;
+
+      &.active {
+        max-height: 40em;
       }
+    }
+  }
 
-      .b-header__nav {
-        clear: both;
-        width: 100%;
-        margin-top: 0;
-        padding: 0;
-        text-align: center;
-        transition: all 0.3s ease-out;
-        overflow: hidden;
-        max-height: 0;
+    .b-menu__link {
+      float: right;
+      margin: 1em 0;
+      font: 1.25em "open_sansbold"; // 20 / 16
+      color: #fff;
+      text-decoration: none;
+    }
 
-        &.active {
-          max-height: 40em;
-        }
-      }
-
-        .b-nav__list {
-          margin: 0;
-          padding: 0;
-        }
-          .b-nav__item {
-            display: block;
-            border-bottom: 1px solid rgba(255,255,255,.5);
-            &:last-child {
-              border-bottom: 0;
-            }
-          }
-            .b-nav__link {
-              display: block;
-              padding: 1em;
-              font: 0.938em "open_sansbold"; // 15 / 16
-              color: #ffffff;
-              text-decoration: none;
-              text-transform: uppercase;
-              transition: all 0.2s ease-out;
-              &:hover {
-                background-color: #ba393d;
-              }
-            }
-
-
-      @include minw(768) {
-        .menu-link {
-          display: none;
-        }
-        .b-header__nav {
-          clear: none;
-          width: auto;
-          max-height: none;
-          text-align: left;
-          padding: 27px 0 15px;
-        }
-        .b-nav__list {
-          letter-spacing: -.3em;
-          text-align: right;
-        }
-        .b-nav__item {
-          @include inline-block;
+    .b-nav__list {
+      margin: 0;
+      padding: 0;
+    }
+      .b-nav__item {
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+        &:last-child {
           border-bottom: 0;
-          &:last-child {
-            border-right: 0;
+        }
+      }
+        .b-nav__link {
+          display: block;
+          padding: 1em;
+          font: 0.938em "open_sansbold"; // 15 / 16
+          color: #ffffff;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: all 0.2s ease-out;
+          &:hover {
+            background-color: #ba393d;
           }
         }
-        .b-nav__link {
-          padding: 0 13px;
-        }
-      }
 
-      @include minw(992) {
-        .b-nav__link {
-          padding: 5px 17px;
+
+    @include minw(768) {
+      .b-menu__link {
+        display: none;
+      }
+      .b-header__nav {
+        clear: none;
+        width: auto;
+        max-height: none;
+        text-align: left;
+        padding: 27px 0 15px;
+      }
+      .b-nav__list {
+        letter-spacing: -.3em;
+        text-align: right;
+      }
+      .b-nav__item {
+        @include inline-block;
+        border-bottom: 0;
+        &:last-child {
+          border-right: 0;
         }
       }
+      .b-nav__link {
+        padding: 0 13px;
+      }
+    }
+
+    @include minw(992) {
+      .b-nav__link {
+        padding: 5px 17px;
+      }
+    }
 
 
 /*----------- #MAIN ---------*/
@@ -141,37 +144,42 @@
   }
     .b-main {
       @extend %clearfix;
-    }
-      .b-main__left {
+
+      &__left {
         float: none;
       }
-        .b-main__header {
-          margin-top: 20px;
-          font: 2.500em "open_sanslight"; // 40 / 16
-          color: #fff;
-          text-transform: uppercase;
-          text-align: center;
-        }
-        .b-main__text {
-          width: 90%;
-          margin: 1.471em auto 0; // 25 / 17
-          font: 1.063em/1.471em "open_sanslight"; // 17/25 / 16
-          color: #fff;
-          text-align: center;
-        }
-          .b-main-lower__text {
-            padding: 1.316em 0;
-            font: 1.188em/1.316em "open_sanslight"; // 19/25 / 16
-            color: #fff;
-          }
-        .b-main__button {
-          margin: 20px auto 0;
-          text-align: center;
-        }
-          .b-btn--main {
-            @extend .b-button;
-            @extend .b-btn--blue;
-          }
+
+      &__header {
+        margin-top: 20px;
+        font: 2.500em "open_sanslight"; // 40 / 16
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      &__text {
+        width: 90%;
+        margin: 1.471em auto 0; // 25 / 17
+        font: 1.063em/1.471em "open_sanslight"; // 17/25 / 16
+        color: #fff;
+        text-align: center;
+      }
+
+      &__button {
+        margin: 20px auto 0;
+        text-align: center;
+      }
+    }
+      .b-main-lower__text {
+        padding: 1.316em 0;
+        font: 1.188em/1.316em "open_sanslight"; // 19/25 / 16
+        color: #fff;
+      }
+
+      .b-btn--main {
+        @extend .b-button;
+        @extend .b-btn--blue;
+      }
 
 @include minw(768) {
   .b-main__iphone {
@@ -225,22 +233,30 @@
   padding-top: 50px;
   padding-bottom: 48px;
 }
+  .b-second {
 
-  .b-second__text {
-    margin-top: 25px;
-    padding: 0 0.313em; // 5 / 16
-    font: 1em/1.875em "SourceSansPro Light"; // 16/30 / 16
-    letter-spacing: 0.03em;
-    color: #737373;
-    text-align: center;
+    &__text {
+      margin-top: 25px;
+      padding: 0 0.313em; // 5 / 16
+      font: 1em/1.875em "SourceSansPro Light"; // 16/30 / 16
+      letter-spacing: 0.03em;
+      color: #737373;
+      text-align: center;
+    }
+
+    &__layout {
+      @extend %clearfix;
+      text-align: center;
+      margin-top: 67px;
+    }
+
+    &__button {
+      margin: 30px auto 0;
+      text-align: center;
+    }
   }
 
-  .b-second__layout {
-    @extend %clearfix;
-    text-align: center;
-    margin-top: 67px;
-  }
-    .b-second__item {
+    .b-second-item {
       width: 70%;
       margin: 0 auto 2em;
       cursor: pointer;
@@ -253,17 +269,17 @@
           color: #ca393a;
         }
       }
-    }
-      .b-second-item__img {
+
+      &__img {
         width: 100%;
         margin: 0 auto;
         overflow: hidden;
       }
-        .b-second-item-img {
+        &-img {
           width: 100%;
           display: block;
         }
-      .b-second-item__name {
+      &__name {
         margin-top: 20px;
         font: 15px "open_sanssemibold";
         color: #737373;
@@ -271,38 +287,35 @@
         text-transform: uppercase;
       }
 
-  .b-second__button {
-    margin: 30px auto 0;
-    text-align: center;
-  }
+    }
     .b-btn--second {
       @extend .b-button;
       @extend .b-btn--blue;
     }
 
 @include minw(768) {
-  .b-second__wrapper {
-    padding-top: 90px;
-    padding-bottom: 88px;
+  .b-second {
+    &__wrapper {
+      padding-top: 90px;
+      padding-bottom: 88px;
+    }
+    &__text {
+      margin-top: 25px;
+      padding: 0 5.500em;
+      font: 1.250em/1.700em "SourceSansPro Light"; // 20/34 / 16
+    }
+    &__layout {
+      margin-top: 67px;
+    }
+    &-item {
+      display: inline-block;
+      width: 23.727272727272727%; /* 261 / 1100 */
+      margin: 0 30px;
+    }
+    &__button {
+      margin-top: 80px;
+    }
   }
-  .b-second__text {
-    margin-top: 25px;
-    padding: 0 5.500em;
-    font: 1.250em/1.700em "SourceSansPro Light"; // 20/34 / 16
-  }
-  .b-second__layout {
-    margin-top: 67px;
-  }
-  .b-second__item {
-    display: inline-block;
-    width: 23.727272727272727%; /* 261 / 1100 */
-    margin: 0 30px;
-  }
-
-  .b-second__button {
-    margin-top: 80px;
-  }
-
 }
 
 /*----------- #THIRD ---------*/
