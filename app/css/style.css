@@ -314,11 +314,11 @@ html {
 }*/
 /*------------------------------------*    $COMMON STYLES
 \*------------------------------------*/
-.clearfix,
-.b-header__content, .b-main, .b-second__layout, .b-third__wrapper, .b-third__left,
-.b-third__right, .b-third-right__sub {
-  *zoom: 1; }
-
+/*.clearfix,
+%clearfix{
+  //IE fix
+  *zoom: 1;
+}*/
 .clearfix:after,
 .b-header__content:after, .b-main:after, .b-second__layout:after, .b-third__wrapper:after, .b-third__left:after,
 .b-third__right:after, .b-third-right__sub:after {
